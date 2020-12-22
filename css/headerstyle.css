@@ -1,0 +1,71 @@
+@font-face {
+    font-family: sbold;
+    src: url(../font/bold.ttf);
+}
+
+body {
+    font: normal 300 18px "Roboto", sans-serif;
+    align-items: center;
+}
+
+#menu-nav {
+    width: 600px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+#navigation-bar ul {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#navigation-bar li {
+    float: left;
+    width: 24%;
+}
+
+#navigation-bar li:hover a::before {
+    right: 0;
+    left: 0;
+}
+
+#navigation-bar a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#navigation-bar a:hover {
+    color: #e74c3c;
+    font-family: sbold;
+}
+
+#navigation-bar a.active {
+    color: #e74c3c;
+    font-family: sbold;
+}
+
+#navigation-bar a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color: #e74c3c;
+}
+
+#navigation-bar a:hover::before {
+    right: 0;
+    left: 0;
+}
+
+li {
+    list-style: none;
+}
